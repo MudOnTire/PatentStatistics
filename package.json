@@ -1,0 +1,11 @@
+{
+  "name": "PatentStatistics",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Brucezhang22/PatentStatistics.git",
+  "author": "MudOnTire <895157882@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
