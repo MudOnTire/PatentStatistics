@@ -23,6 +23,7 @@ block content
 			img(src="/img/page-arrow.png", class='page-arrow')
 
 	div.section.page.page2
+		div.page2-bg
 		div.row
 			div.page2-title-container
 				div.page2-title 专利排名
@@ -33,7 +34,7 @@ block content
 		div.row
 			p.summary.colleague-summary !{`多达<strong class="large-text">${result.partnerCount}</strong>位老师、同事、学生共同合作，覆盖科研领域<strong class="large-text">${result.ipcCount}</strong>个；`}
 				img(src="/img/thumb.png", class="thumb")
-		div.row
+		div.row.rank-row
 			div.rank-table-bg
 			div.rank-table
 				div.rank-item

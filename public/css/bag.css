@@ -7,7 +7,6 @@ html{
 }
 
 body{
-    background-color: #ffe84a;
     font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif
 }
 
@@ -15,11 +14,13 @@ html,body{
     width: 100%;
     height: 100%;
     overflow: hidden;
+    background-color: #ffe84a;
 }
 
 .page{
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 
 .row{
@@ -126,12 +127,16 @@ html,body{
 
 .colleague-summary{
     margin-top: 1.4rem;
-    padding: 0 2rem;
+    padding: 0 10%;
 }
 
 .thumb{
     width: 2rem;
     vertical-align: bottom;
+}
+
+.rank-row{
+    position: relative;
 }
 
 .rank-table-bg{
@@ -142,9 +147,22 @@ html,body{
     background-size: contain;
 }
 
+.rank-table{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 4rem;
+    width: 78%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .rank-item{
-    padding: 0 1rem;
     overflow: hidden;
+    line-height: 2rem;
+    margin: 0 1rem;
+    padding: 0 0.4rem;
+    border-bottom: solid 0.05rem #cda184;
 }
 
 .rank-name{
@@ -153,4 +171,19 @@ html,body{
 
 .rank-value{
     float: right;
+}
+
+.page2{
+    background-color: #fff;
+}
+
+.page2-bg{
+    background-color: #ffe84a;
+    width: 1000px;
+    position: absolute;
+    height: 1000px;
+    border-bottom-left-radius: 500px;
+    border-bottom-right-radius: 500px;
+    top: -390px;
+    left: -312px;
 }
