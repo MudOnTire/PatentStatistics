@@ -1,0 +1,20 @@
+extends layout
+
+block style
+	link(rel="stylesheet", href="/css/bag.css")
+
+block content
+	div.page.page1
+		div.total-count-container
+			div.total-count=result.count+'件专利'
+				div.dot.left-dot
+				div.dot.right-dot
+			div.total-count-bg
+				span=result.count+'件专利'
+		p.history-summary
+	div.page.page2
+	div.page.page3
+
+block script
+	
+

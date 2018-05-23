@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 20px;
+}
+
+body{
+    background-color: #ffe84a;
+    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.page{
+    height: 100%;
+    width: 100%;
+}
+
+.page1{
+    margin-top: 3rem;
+}
+
+.total-count-container{
+    float: left;    
+    margin-left: 1.6rem;
+}
+
+.total-count,.total-count-bg{
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: 0 1.6rem;
+    border-radius: 0.8rem;
+    border: solid 0.06rem #934d1f;
+}
+
+.total-count{
+    font-family: FZCYSJW--GB1-0;
+    color: #934d1f;
+    text-align: center;
+    background-color: #ffe84a;
+    position: relative;
+    z-index: 100;
+    font-weight: bold;
+}
+
+.total-count-bg{
+    top: -1.5rem;
+    position: relative;
+    background: -webkit-repeating-linear-gradient(-45deg,#934d1f 29px,#934d1f 30px,#fff 30px,#fff 38px);
+}
+
+.total-count-bg span{
+    opacity: 0;
+}
+
+.dot{
+    position: absolute;
+    top: 0.7rem;
+    height: 0.2rem;
+    width: 0.2rem;
+    background-color: #934d1f;
+}
+
+.left-dot{
+    left: 0.8rem;
+}
+
+.right-dot{
+    right: 0.8rem;
+}
