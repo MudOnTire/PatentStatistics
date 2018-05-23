@@ -5,13 +5,20 @@ block style
 
 block content
 	div.page.page1
-		div.total-count-container
-			div.total-count=result.count+'件专利'
-				div.dot.left-dot
-				div.dot.right-dot
-			div.total-count-bg
-				span=result.count+'件专利'
-		p.history-summary
+		div.row
+			div.total-count-container
+				div.total-count=result.count+'件专利'
+					div.dot.left-dot
+					div.dot.right-dot
+				div.total-count-bg
+					span=result.count+'件专利'
+		div.row
+			p.summary.history-summary !{`${result.adMin}至${result.adMax}您为${result.pa}产出的专利数排名第<strong class="large-text">${result.countRank}</strong>位`}
+		div.row
+			img(src="/imgs/page1-2.png", class="paper-plane")
+			p.summary.count-summary !{`其中，发明专利<strong class="large-text">${result.fmzlCount}</strong>件，实用新型专利有<strong class="large-text">${result.syxxCount}</strong>件，外观专利有<strong class="large-text">${result.wgsjCount}</strong> 件；`}
+		div.row
+			img(src="/imgs/page1-1.png", class='page1-cartoon')
 	div.page.page2
 	div.page.page3
 

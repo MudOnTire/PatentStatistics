@@ -22,12 +22,17 @@ html,body{
 }
 
 .page1{
-    margin-top: 3rem;
+    margin-top: 15%;
+}
+
+.row{
+    overflow: hidden;
+    position: relative;
 }
 
 .total-count-container{
-    float: left;    
     margin-left: 1.6rem;
+    float: left;
 }
 
 .total-count,.total-count-bg{
@@ -49,9 +54,8 @@ html,body{
 }
 
 .total-count-bg{
-    top: -1.5rem;
-    position: relative;
     background: -webkit-repeating-linear-gradient(-45deg,#934d1f 29px,#934d1f 30px,#fff 30px,#fff 38px);
+    margin-top: -1.5rem;
 }
 
 .total-count-bg span{
@@ -72,4 +76,41 @@ html,body{
 
 .right-dot{
     right: 0.8rem;
+}
+
+.summary{
+    font-size: 0.75rem;
+	line-height: 1.75rem;
+    color: #934d1f;
+}
+
+.history-summary{
+    width: 10rem;
+    margin-left: 1.6rem;
+    margin-top: 0.8rem;
+}
+
+.large-text{
+    padding: 0 0.4rem;
+    font-size: 2rem;
+    color: #4a1f03;
+    font-family: FZCYSJW--GB1-0;
+}
+
+.paper-plane{
+    float: left;
+    width: 20%;
+    margin-left: 10%;
+    margin-top: 0.6rem;
+}
+
+.count-summary{
+    width: 56%;
+    position: absolute;
+    bottom: 0;
+    right: 8%;
+}
+
+.page1-cartoon{
+    width: 60%;
 }
