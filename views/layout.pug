@@ -6,13 +6,15 @@ html
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title #{title} - 专利统计
     link(rel="stylesheet", href="/css/reset.css")
+    link(rel="stylesheet", href="/lib/fullpage/jquery.fullpage.min.css")
     block style
 
 
   body
+    div#fullpage
+      block content
 
-    block content
-
-    script(src='/js/lib/jquery-3.1.1.min.js')
+    script(src='/js/jquery-3.3.1.min.js')
+    script(src='/lib/fullpage/jquery.fullpage.min.js')
 
     block script

@@ -14,15 +14,12 @@ body{
 html,body{
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 .page{
     height: 100%;
     width: 100%;
-}
-
-.page1{
-    margin-top: 15%;
 }
 
 .row{
@@ -35,7 +32,7 @@ html,body{
     float: left;
 }
 
-.total-count,.total-count-bg{
+.total-count,.total-count-bg,.page2-title,.page2-title-bg{
     font-size: 1.2rem;
     line-height: 1.6rem;
     padding: 0 1.6rem;
@@ -43,7 +40,7 @@ html,body{
     border: solid 0.06rem #934d1f;
 }
 
-.total-count{
+.total-count,.page2-title{
     font-family: FZCYSJW--GB1-0;
     color: #934d1f;
     text-align: center;
@@ -53,7 +50,7 @@ html,body{
     font-weight: bold;
 }
 
-.total-count-bg{
+.total-count-bg,.page2-title-bg{
     background: -webkit-repeating-linear-gradient(-45deg,#934d1f 29px,#934d1f 30px,#fff 30px,#fff 38px);
     margin-top: -1.5rem;
 }
@@ -78,7 +75,7 @@ html,body{
     right: 0.8rem;
 }
 
-.summary{
+.summary,.rank-item{
     font-size: 0.75rem;
 	line-height: 1.75rem;
     color: #934d1f;
@@ -113,4 +110,47 @@ html,body{
 
 .page1-cartoon{
     width: 60%;
+}
+
+.page-arrow{
+    width: 8%;
+    display: block;
+    margin: 1.6rem auto 0;
+}
+
+/* page2 */
+.page2-title-container{
+    width: 10rem;
+    margin: 0 auto;
+}
+
+.colleague-summary{
+    margin-top: 1.4rem;
+    padding: 0 2rem;
+}
+
+.thumb{
+    width: 2rem;
+    vertical-align: bottom;
+}
+
+.rank-table-bg{
+    margin: 1rem auto 0;
+    width: 80%;
+    padding-bottom: 80%;
+    background: url('/img/page2-table-bg.png') no-repeat center center;
+    background-size: contain;
+}
+
+.rank-item{
+    padding: 0 1rem;
+    overflow: hidden;
+}
+
+.rank-name{
+    float: left;
+}
+
+.rank-value{
+    float: right;
 }

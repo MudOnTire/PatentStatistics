@@ -4,7 +4,7 @@ block style
 	link(rel="stylesheet", href="/css/bag.css")
 
 block content
-	div.page.page1
+	div.section.page.page1
 		div.row
 			div.total-count-container
 				div.total-count=result.count+'件专利'
@@ -15,13 +15,40 @@ block content
 		div.row
 			p.summary.history-summary !{`${result.adMin}至${result.adMax}您为${result.pa}产出的专利数排名第<strong class="large-text">${result.countRank}</strong>位`}
 		div.row
-			img(src="/imgs/page1-2.png", class="paper-plane")
+			img(src="/img/page1-2.png", class="paper-plane")
 			p.summary.count-summary !{`其中，发明专利<strong class="large-text">${result.fmzlCount}</strong>件，实用新型专利有<strong class="large-text">${result.syxxCount}</strong>件，外观专利有<strong class="large-text">${result.wgsjCount}</strong> 件；`}
 		div.row
-			img(src="/imgs/page1-1.png", class='page1-cartoon')
-	div.page.page2
-	div.page.page3
+			img(src="/img/page1-1.png", class='page1-cartoon')
+		div.row
+			img(src="/img/page-arrow.png", class='page-arrow')
+
+	div.section.page.page2
+		div.row
+			div.page2-title-container
+				div.page2-title 专利排名
+					div.dot.left-dot
+					div.dot.right-dot
+				div.page2-title-bg
+					span 专利排名
+		div.row
+			p.summary.colleague-summary !{`多达<strong class="large-text">${result.partnerCount}</strong>位老师、同事、学生共同合作，覆盖科研领域<strong class="large-text">${result.ipcCount}</strong>个；`}
+				img(src="/img/thumb.png", class="thumb")
+		div.row
+			div.rank-table-bg
+			div.rank-table
+				div.rank-item
+					p.rank-name 发明专利
+					p.rank-value !{`<strong class="large-text">${result.fmzlRank}</strong>名`}
+				div.rank-item
+					p.rank-name 实用新型
+					p.rank-value !{`<strong class="large-text">${result.syxxRank}</strong>名`}
+				div.rank-item
+					p.rank-name 外观专利
+					p.rank-value !{`<strong class="large-text">${result.wgsjRank}</strong>名`}
+
+	div.section.page.page3
 
 block script
+	script(src='/js/bag.js')
 	
 
