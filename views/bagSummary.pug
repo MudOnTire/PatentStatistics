@@ -7,27 +7,27 @@ block style
 block content
   div.main
     div.row.top-row
-      p !{`专利总数：<strong class="college-patent-count">${result.value.count}件</strong>`}
+      p !{`专利总数：<strong class="college-patent-count">${result.count}件</strong>`}
     div.row.mid-row.mid-row1
-      p.time-range !{`（ ${result.value.ad} - ${result.value.now} ）`}
+      p.time-range !{`（ ${result.adMin} - ${result.adMax} ）`}
       div.chart-container
-        canvas#canPie(width=500,height=500,data-value=`${result.value.fmzlCount},${result.value.syxxCount},${result.value.wgsjCount}`)
+        canvas#canPie(width=500,height=500,data-value=`${result.fmzlCount},${result.syxxCount},${result.wgsjCount}`)
         ul.count-list
           li.count-item
             span.color-tip.fmzl-color
             span.count-name 发明专利
-            span.count-value=`${result.value.fmzlCount}件`
+            span.count-value=`${result.fmzlCount}件`
           li.count-item
             span.color-tip.syxx-color
             span.count-name 实用新型
-            span.count-value=`${result.value.syxxCount}件`
+            span.count-value=`${result.syxxCount}件`
           li.count-item
             span.color-tip.wgsj-color
             span.count-name 外观专利
-            span.count-value=`${result.value.wgsjCount}件`
+            span.count-value=`${result.wgsjCount}件`
       div.rank-clue
         img.leaf.left-leaf(src="/img/left-leaf.png")
-        span.rank-clue-txt=`${result.collegeName}第${result.value.countRank}名`
+        span.rank-clue-txt=`${result.pa}第${result.countRank}名`
         img.leaf.right-leaf(src="/img/right-leaf.png")  
       div.sperator1
 
@@ -35,26 +35,26 @@ block content
       div.colleague-container
         img.row2-icon(src="/img/colleague-icon.png")
         p 合作人员数
-        p= result.value.kyCount
+        p= result.partnerCount
       div.vertical-seperator
       div.field-container
         img.row2-icon(src="/img/field-icon.png")
         p 涉及领域
-        p= result.value.ipcCount
+        p= result.ipcCount
 
     div.row.mid-row.mid-row3
       ul.rank-list  
         li.rank-item
           p.rank-name 发明专利排名
-          p.rank-value= result.value.fmzlRank
+          p.rank-value= result.fmzlRank
         li.rank-item
           p.rank-name 实用新型排名
-          p.rank-value= result.value.syxxRank
+          p.rank-value= result.syxxRank
         li.rank-item
           p.rank-name 外观专利排名
-          p.rank-value= result.value.wgsjRank 
+          p.rank-value= result.wgsjRank 
     div.row.bottom-row
-      p !{`鸣谢：暂无`}
+      p.thanks !{`鸣谢：${result.partnerRank}`}
 
 block script
   script(src="/js/bagSummary.js")

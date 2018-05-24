@@ -27,7 +27,6 @@
 .time-range{
     text-align: center;
     font-family: FZCYSJW--GB1-0;    
-    letter-spacing: 0.06rem;
 }
 
 #canPie{
@@ -135,4 +134,14 @@
 
 .mid-row3{
     padding-top: 0.4rem;
+}
+
+.bottom-row{
+    padding: 0.3rem 0.5rem;;
+    font-family: inherit;
+    font-size: 0.6rem;
+}
+
+.thanks{
+    line-height: 0.8rem;
 }
