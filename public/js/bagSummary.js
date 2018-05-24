@@ -39,17 +39,14 @@
 })();
 
 $(function () {
-    var lastY;
-    var scrolled = false;
-    $(document).on('touchmove', function (e) {
-        var currentY = e.originalEvent.touches[0].clientY;
-        if (currentY > lastY && !scrolled) {
+    var ts;
+    $(document).on('touchstart', function (e) {
+        ts = e.originalEvent.touches[0].clientY;
+    });
+    $(document).on('touchend', function (e) {
+        var te = e.originalEvent.changedTouches[0].clientY;
+        if (ts < te - 5) {
             parent.pageUp();
-            scrolled = true;
-            setTimeout(function () {
-                scrolled = false;
-            }, 1000);
         }
-        lastY = currentY;
     });
 });
