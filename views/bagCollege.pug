@@ -10,3 +10,25 @@ block content
       p !{`专利总数：<strong class="college-patent-count">${result.value.count}件</strong>`}
     div.row.mid-row
       p.time-range !{`（ ${result.value.ad}-${result.value.now} ）`}
+      div.chart-container
+        canvas#canPie(width=500,height=500,data-value=`${result.value.fmzlCount},${result.value.syxxCount},${result.value.wgsjCount}`)
+        ul.count-list
+          li.count-item
+            span.color-tip.fmzl-color
+            span.count-name 发明专利
+            span.count-value=`${result.value.fmzlCount}件`
+          li.count-item
+            span.color-tip.syxx-color
+            span.count-name 实用新型
+            span.count-value=`${result.value.syxxCount}件`
+          li.count-item
+            span.color-tip.wgsj-color
+            span.count-name 外观专利
+            span.count-value=`${result.value.wgsjCount}件`
+      div.rank-clue
+        img.leaf.left-leaf(src="/img/left-leaf.png")
+        span.rank-clue-txt=`${result.collegeName}第${result.value.validRank}名`
+        img.leaf.right-leaf(src="/img/right-leaf.png")        
+
+block script
+  script(src="/js/bagCollege.js")

@@ -29,3 +29,67 @@
     font-family: FZCYSJW--GB1-0;    
     letter-spacing: 0.08rem;
 }
+
+#canPie{
+    width: 35%;
+    height: 35%;
+    float: left;
+}
+
+.chart-container{
+    margin-top: 5%;
+    overflow: hidden;
+}
+
+.count-list{
+    float: right;
+    width: 65%;
+    padding-left: 8%;
+}
+
+.count-item{
+    width: 100%;
+    line-height: 1.6rem;
+    border-bottom: 1px solid rgba(146, 77, 31, 0.2);
+}
+
+.color-tip{
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.4rem;
+    vertical-align: middle;
+    margin-right: 0.4rem;
+}
+
+.fmzl-color{
+    background-color: #ff8e3c;
+}
+
+.syxx-color{
+    background-color: #ffe84a;
+}
+
+.wgsj-color{
+    background-color: #FFAF29;
+}
+
+.rank-clue{
+    text-align: center;
+    overflow: hidden;
+    line-height: 2.2rem;
+    width: 90%;
+    margin: 3% auto;
+}
+
+.leaf{
+    display: block;
+    float: left;
+    width: 8%;
+}
+
+.rank-clue-txt{
+    display: block;
+    float: left;
+    width: 84%;
+    font-size: 0.84rem;
+}
