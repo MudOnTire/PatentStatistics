@@ -137,6 +137,7 @@ html,body{
 
 .rank-row{
     position: relative;
+    margin-bottom: 10%;
 }
 
 .rank-table-bg{
@@ -151,7 +152,7 @@ html,body{
     position: absolute;
     left: 0;
     right: 0;
-    top: 4rem;
+    top: 20%;
     width: 78%;
     margin-left: auto;
     margin-right: auto;
@@ -179,11 +180,18 @@ html,body{
 
 .page2-bg{
     background-color: #ffe84a;
-    width: 1000px;
+    width: 800%;
     position: absolute;
-    height: 1000px;
-    border-bottom-left-radius: 500px;
-    border-bottom-right-radius: 500px;
-    top: -390px;
-    left: -312px;
+    height: 800%;
+    border-bottom-left-radius: 400%;
+    border-bottom-right-radius: 400%;
+    top: -708%;
+    left: -350%;
+}
+
+.page2-bottom-row{
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
 }
