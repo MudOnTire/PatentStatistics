@@ -1,4 +1,4 @@
-extends layout
+extends bagCollegeLayout
 
 block style
   link(rel="stylesheet", href="/css/bag.css")
@@ -8,8 +8,8 @@ block content
   div.main
     div.row.top-row
       p !{`专利总数：<strong class="college-patent-count">${result.value.count}件</strong>`}
-    div.row.mid-row
-      p.time-range !{`（ ${result.value.ad}-${result.value.now} ）`}
+    div.row.mid-row.mid-row1
+      p.time-range !{`（ ${result.value.ad} - ${result.value.now} ）`}
       div.chart-container
         canvas#canPie(width=500,height=500,data-value=`${result.value.fmzlCount},${result.value.syxxCount},${result.value.wgsjCount}`)
         ul.count-list
@@ -27,8 +27,34 @@ block content
             span.count-value=`${result.value.wgsjCount}件`
       div.rank-clue
         img.leaf.left-leaf(src="/img/left-leaf.png")
-        span.rank-clue-txt=`${result.collegeName}第${result.value.validRank}名`
-        img.leaf.right-leaf(src="/img/right-leaf.png")        
+        span.rank-clue-txt=`${result.collegeName}第${result.value.countRank}名`
+        img.leaf.right-leaf(src="/img/right-leaf.png")  
+      div.sperator1
+
+    div.row.mid-row.mid-row2
+      div.colleague-container
+        img.row2-icon(src="/img/colleague-icon.png")
+        p 合作人员数
+        p= result.value.kyCount
+      div.vertical-seperator
+      div.field-container
+        img.row2-icon(src="/img/field-icon.png")
+        p 涉及领域
+        p= result.value.ipcCount
+
+    div.row.mid-row.mid-row3
+      ul.rank-list  
+        li.rank-item
+          p.rank-name 发明专利排名
+          p.rank-value= result.value.fmzlRank
+        li.rank-item
+          p.rank-name 实用新型排名
+          p.rank-value= result.value.syxxRank
+        li.rank-item
+          p.rank-name 外观专利排名
+          p.rank-value= result.value.wgsjRank 
+    div.row.bottom-row
+      p !{`鸣谢：暂无`}
 
 block script
   script(src="/js/bagCollege.js")

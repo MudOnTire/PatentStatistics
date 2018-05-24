@@ -7,27 +7,27 @@
     color: #934d1f;
 }
 
-.top-row{
+.top-row,.bottom-row{
     background-color: rgba(255,255,255, 0.5);
-    line-height: 2.8rem;
+    line-height: 2rem;
     padding: 0 1rem;
     font-family: FZCYSJW--GB1-0;
     font-weight: bold;
 }
 
 .college-patent-count{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .mid-row{
     background-color: #fff;
-    padding: 1rem 0.8rem;
+    padding: 0.8rem;
 }
 
 .time-range{
     text-align: center;
     font-family: FZCYSJW--GB1-0;    
-    letter-spacing: 0.08rem;
+    letter-spacing: 0.06rem;
 }
 
 #canPie{
@@ -51,6 +51,13 @@
     width: 100%;
     line-height: 1.6rem;
     border-bottom: 1px solid rgba(146, 77, 31, 0.2);
+    overflow: hidden;
+    padding: 0 0.2rem;
+}
+
+.count-value{
+    display: block;
+    float: right;
 }
 
 .color-tip{
@@ -92,4 +99,40 @@
     float: left;
     width: 84%;
     font-size: 0.84rem;
+}
+
+.sperator1{
+    height: 1px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgba(146, 77, 31, 0.2);
+}
+
+.mid-row2{
+    padding-top: 0;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid rgba(146, 77, 31, 0.2);    
+}
+
+.mid-row2>div{
+    float: left;
+}
+
+.row2-icon{
+    width: 0.8rem;
+}
+
+.colleague-container,.field-container{
+    width: 50%;
+    text-align: center;
+    line-height: 1.2rem;
+}
+
+.rank-item{
+    border-bottom: 1px dotted rgba(146, 77, 31, 0.2);        
+    padding: 0 1.2rem;
+}
+
+.mid-row3{
+    padding-top: 0.4rem;
 }
