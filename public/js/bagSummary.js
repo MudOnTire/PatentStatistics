@@ -49,4 +49,6 @@ $(function () {
             parent.pageUp();
         }
     });
+
+    parent.updateIframeHeight($('.main').height());
 });
