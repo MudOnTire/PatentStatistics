@@ -31,7 +31,7 @@ app.use(express.static(path.join(__dirname, 'public'), { maxAge: 31557600000 }))
  * http://localhost:8080/statistics/bag?college=南京理工大学name=胡文斌
  */
 app.get('/statistics/bag', homeController.bagStatistics);
-app.get('/statistics/bag/college',homeController.bagCollegeStatistics);
+app.get('/statistics/bag/summary',homeController.bagSummary);
 app.get('/statistics/store', homeController.storeStatistics);
 
 /**

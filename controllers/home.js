@@ -23,20 +23,22 @@ exports.bagStatistics = function (req, res) {
     });
 }
 
-exports.bagCollegeStatistics = function (req, res) {
+exports.bagSummary = function (req, res) {
     const collegeName = req.query.college;
-    const query = { collegeName };
+    const name = req.query.name;
+    const query = { collegeName, name };
     const options = {
-        url: `${urlBase}/findCollegeCountByName`,
+        url: `${urlBase}/findProfessorCountByName`,
         qs: query
     }
     request(options, function (err, response, body) {
         if (err) {
 
         } else {
-            const result = JSON.parse(body).result;
-            result.value.now = moment(new Date()).format('YYYY.MM.DD');
-            res.render('bagCollege', { result: result });
+            const result = JSON.parse(body).result.value;
+            result.adMin = moment(result.adMin, 'YYYY.MM.DD').format('YYYY年MM月DD日');
+            result.adMax = moment(result.adMin, 'YYYY.MM.DD').format('YYYY年MM月DD日');
+            res.render('bagSummary', { result: result });
         }
     });
 }
