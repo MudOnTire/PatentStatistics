@@ -1,0 +1,12 @@
+extends layout
+
+block style
+  link(rel="stylesheet", href="/css/bag.css")
+  link(rel="stylesheet", href="/css/bagCollege.css")
+
+block content
+  div.main
+    div.row.top-row
+      p !{`专利总数：<strong class="college-patent-count">${result.value.count}件</strong>`}
+    div.row.mid-row
+      p.time-range !{`（ ${result.value.ad}-${result.value.now} ）`}

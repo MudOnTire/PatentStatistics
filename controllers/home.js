@@ -12,13 +12,31 @@ exports.bagStatistics = function (req, res) {
         qs: query
     }
     request(options, function (err, response, body) {
-        if(err){
+        if (err) {
 
-        }else{
+        } else {
             const result = JSON.parse(body).result.value;
             result.adMin = moment(result.adMin, 'YYYY.MM.DD').format('YYYY年MM月DD日');
             result.adMax = moment(result.adMin, 'YYYY.MM.DD').format('YYYY年MM月DD日');
             res.render('bag', { result: result });
+        }
+    });
+}
+
+exports.bagCollegeStatistics = function (req, res) {
+    const collegeName = req.query.college;
+    const query = { collegeName };
+    const options = {
+        url: `${urlBase}/findCollegeCountByName`,
+        qs: query
+    }
+    request(options, function (err, response, body) {
+        if (err) {
+
+        } else {
+            const result = JSON.parse(body).result;
+            result.value.now = moment(new Date()).format('YYYY.MM.DD');
+            res.render('bagCollege', { result: result });
         }
     });
 }
