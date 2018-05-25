@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.page{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.page1{
+    background: url('/img/store/page1-bg.png') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    padding-top: 15%;
+}
+
+.title{
+    margin: 0 auto;
+    width: 40%;
+    display: block;
+}
+
+.highlight-txt{
+    font-size: 2rem;
+    padding: 0 0.5rem;
+    color: #22ffeb;
+    font-family: FZCYSJW--GB1-0;
+}
+
+.content1,.content2{
+    border: solid 1px #1460eb;
+    padding: 1.4rem;
+    width: 68%;
+    margin: 8% auto 0;
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+}
+
+.divider-outter, .divider-inner{
+    height: 0.6rem;
+    width: 20%;
+    margin: 0 auto;
+    border-left: solid 1px #1460eb;
+    border-right: solid 1px #1460eb;
+}
+
+.divider-inner{
+    width: 86%;
+}
+
+.content2{
+    margin-top: 0;
+}
+
+.cup{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}

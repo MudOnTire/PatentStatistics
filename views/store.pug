@@ -5,6 +5,12 @@ block style
 
 block content
 	div.section.page.page1
+		img.title(src="/img/store/page1-title.png")
+		img.cup(src="/img/store/page1-cup.png")
+		p.content1 !{`<span class="highlight-txt">${result.value.kyCount}</span>位科研人员，<span class="highlight-txt">${result.value.count}</span>件专利，覆盖<span class="highlight-txt">${result.value.ipcCount}</span>个研究领域；`}
+		div.divider-outter
+			div.divider-inner
+		p.content2 !{`见证了${result.collegeName}在科研路上的辛勤和汗水。`}
 
 	div.section.page.page2
 
