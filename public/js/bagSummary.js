@@ -50,7 +50,9 @@ $(function () {
         }
     });
 
-    if(parent!==window){
-        parent.updateIframeHeight($('.main').height());
-    }
+    $('.jump-link').on('click', function () {
+        if (parent !== window) {
+            parent.toPage(1);
+        }
+    });
 });

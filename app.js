@@ -37,7 +37,7 @@ app.get('/statistics/bag/summary',homeController.bagSummary);
 //http://localhost:8080/statistics/store?college=南京理工大学
 app.get('/statistics/store', homeController.storeStatistics);
 ////http://localhost:8080/statistics/store/summary?college=南京理工大学
-app.get('/statistics/store/summary',homeController.bagSummary);
+app.get('/statistics/store/summary',homeController.storeSummary);
 
 
 /**

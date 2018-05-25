@@ -3,15 +3,12 @@ $(function () {
     $('.page-arrow').on('click touch', function () {
         $.fn.fullpage.moveSectionDown();
     });
-    $('.jump-link').on('click', function () {
-        $.fn.fullpage.moveTo(1);
-    });
 });
+
+function toPage(page){
+    $.fn.fullpage.moveTo(page);    
+}
 
 function pageUp() {
     $.fn.fullpage.moveSectionUp();
-}
-
-function updateIframeHeight(height){
-    $('#collegeFrame').height(height);
 }

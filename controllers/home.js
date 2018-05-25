@@ -65,7 +65,7 @@ exports.storeStatistics = function (req, res) {
 }
 
 //专利宝汇总页面
-exports.storeStatistics = function (req, res) {
+exports.storeSummary = function (req, res) {
     const collegeName = req.query.college;
     const query = { collegeName };
     const options = {
