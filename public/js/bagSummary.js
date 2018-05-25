@@ -50,5 +50,7 @@ $(function () {
         }
     });
 
-    parent.updateIframeHeight($('.main').height());
+    if(parent!==window){
+        parent.updateIframeHeight($('.main').height());
+    }
 });

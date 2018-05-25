@@ -44,5 +44,19 @@ exports.bagSummary = function (req, res) {
 }
 
 exports.storeStatistics = function (req, res) {
+    const collegeName = req.query.college;
+    const query = { collegeName };
+    const options = {
+        url: `${urlBase}/findCollegeCountByName`,
+        qs: query
+    }
+    request(options, function (err, response, body) {
+        if (err) {
 
+        } else {
+            const result = JSON.parse(body).result;
+            result.value.now = moment(new Date()).format('YYYY.MM.DD');
+            res.render('store', { result: result });
+        }
+    });
 }

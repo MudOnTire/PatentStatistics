@@ -28,10 +28,13 @@ app.use(express.static(path.join(__dirname, 'public'), { maxAge: 31557600000 }))
 
 /**
  * routes
- * http://localhost:8080/statistics/bag?college=南京理工大学name=胡文斌
  */
+
+//http://localhost:8080/statistics/bag?college=南京理工大学&name=胡文斌
 app.get('/statistics/bag', homeController.bagStatistics);
+//http://localhost:8080/statistics/bag/summary?college=南京理工大学&name=胡文斌
 app.get('/statistics/bag/summary',homeController.bagSummary);
+//http://localhost:8080/statistics/store?college=南京理工大学
 app.get('/statistics/store', homeController.storeStatistics);
 
 /**
