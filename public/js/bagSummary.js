@@ -46,7 +46,9 @@ $(function () {
     $(document).on('touchend', function (e) {
         var te = e.originalEvent.changedTouches[0].clientY;
         if (ts < te - 5) {
-            parent.pageUp();
+            if (parent !== window) {
+                parent.pageUp();
+            }
         }
     });
 
