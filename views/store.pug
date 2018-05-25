@@ -1,4 +1,4 @@
-extends storeLayout
+extends layout
 
 block style
 	link(rel="stylesheet", href="/css/store.css")
@@ -44,6 +44,7 @@ block content
 	
 	div.section.page.page3
 		img.title(src="/img/store/page3-title.png")
+		img.flags(src="/img/store/page3-deco.png")
 		div.page3-content1
 			img.page3-content1-bg(src="/img/store/page3-bg2.png")
 			p.content1-score !{`${result.value.validRate*100}%`}
@@ -51,6 +52,10 @@ block content
 				span.left-line
 				span.text !{`看的出${result.collegeName}对科学研究成果的珍视和与呵护`}
 				span.right-line
+		div.page3-content2
+			img.page3-content2-bg(src="/img/store/page3-bg1.png")
+			p.content2-text !{`贵校的（许可+转让率）为${result.value.transferRate*100}%，运营状况良好，打败了全国${(1-result.value.transferRank/2015).toFixed(2)*100}%的高校，继续保持吧！`}
+		img.page-arrow(src="/img/store/page-arrow.png")
 
 block script
 	script(src='/js/store.js')

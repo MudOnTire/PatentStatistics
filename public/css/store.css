@@ -175,7 +175,7 @@ html,body{
     width: 60%;
     position: relative;
     margin: 0 auto;
-    margin-top: 5%;    
+    margin-top: 6%;    
     padding-bottom: 60%;
 }
 
@@ -212,8 +212,8 @@ html,body{
 .page3-content1-info>.text{
     padding: 0 1rem;
     width: 88%;
-    font-size: 1.1rem;
-    line-height: 1.3rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
 }
 
 .content1-score{
@@ -224,4 +224,36 @@ html,body{
     font-weight: bold;
     text-align: center;
     width: 100%;
+}
+
+.flags{
+    position: absolute;
+    width: 100%;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+}
+
+.page3-content2{
+    width: 62%;
+    margin: 6% auto;
+    position: relative;
+}
+
+.page3-content2-bg{
+    width: 100%;
+}
+
+.content2-text{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    display: table;
+    padding: 0 1rem;
+    margin: auto;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
 }
