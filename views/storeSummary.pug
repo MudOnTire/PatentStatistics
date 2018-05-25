@@ -47,20 +47,21 @@ block content
         img.row2-icon(src="/img/store/page4-icon2.png")
         p 涉及领域
         p.highlight= result.value.ipcCount
-
+    img.divider1(src="/img/store/page4-divider1.png")    
     div.row.mid-row.mid-row3
+      img.page4-bg1(src="/img/store/page4-bg1.png")
       ul.rank-list  
         li.rank-item
           p.rank-name 发明专利排名
-          p.rank-value= result.fmzlRank
+          p.rank-value.highlight= result.value.fmzlRank
+        img.divider5(src="/img/store/page4-divider5.png")
         li.rank-item
           p.rank-name 实用新型排名
-          p.rank-value= result.syxxRank
+          p.rank-value.highlight= result.value.syxxRank
+        img.divider6(src="/img/store/page4-divider6.png")        
         li.rank-item
           p.rank-name 外观专利排名
-          p.rank-value= result.wgsjRank 
-    div.row.bottom-row
-      p.thanks !{`鸣谢：${result.partnerRank}`}
+          p.rank-value.highlight= result.value.wgsjRank       
     a.jump-link(href="javascript:;") 统计我的专利
     p#license 以上数据由中高知识产权价值评估系统提供
 

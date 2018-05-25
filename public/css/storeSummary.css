@@ -47,6 +47,7 @@ body{
 
 .divider1{
     width: 100%;
+    display: block;
 }
 
 .college-patent-count{
@@ -169,10 +170,29 @@ body{
     float: left;
 }
 
+.rank-item{
+    overflow: hidden;
+    line-height: 2.2rem;
+    padding: 0 1.3rem;    
+}
+
+.divider5,.divider6{
+    width: 100%;
+    height: 1px;
+    display: block;
+}
+
+.rank-name{
+    float: left;
+}
+
+.rank-value{
+    float: right;
+}
+
 .mid-row2{
     padding-top: 0;
-    padding-bottom: 0.4rem;
-    border-bottom: 1px solid rgba(146, 77, 31, 0.2);    
+    padding-bottom: 0.4rem; 
 }
 
 .mid-row2>div{
@@ -189,15 +209,6 @@ body{
     line-height: 1.2rem;
 }
 
-.rank-item{
-    border-bottom: 1px dotted rgba(146, 77, 31, 0.2);        
-    padding: 0 1.2rem;
-}
-
-.mid-row3{
-    padding-top: 0.4rem;
-}
-
 .bottom-row{
     padding: 0.3rem 0.5rem;;
     font-family: inherit;
@@ -210,7 +221,7 @@ body{
 
 .jump-link{
     display: block;
-    color: #4a1f03;
+    color: #22ffeb;
     font-size: 0.8rem;
     text-align: center;
     margin-top: 1rem;
@@ -218,7 +229,7 @@ body{
 }
 
 #license{
-    color: #4a1f03;
+    color: #22ffeb;
     line-height: 1rem;
     font-size: 0.5rem;
     text-align: center;
@@ -228,12 +239,31 @@ body{
     right: 0;
 }
 
+.page4-bg1{
+    width: 100%;
+    height: 100%;
+}
+
+.mid-row3{
+    width: 90%;
+    margin: 6% auto 0;
+    padding: 0;
+    height: 6.6rem;;
+}
+
+.rank-list{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 0 1rem;
+}
+
 @media screen and (max-height: 569px){
     .main{
         padding-top: 1%;
     }
-    .mid-row{
-        padding: 0.4rem;
+    .mid-row3{
+        height: 5.4rem;;
     }
     .rank-item{
         line-height: 1.8rem;
