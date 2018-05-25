@@ -41,7 +41,16 @@ block content
 		img.page-arrow(src="/img/store/page-arrow.png")
 		img.left-hill(src="/img/store/page2-left-hill.png")
 		img.right-hill(src="/img/store/page2-right-hill.png")
+	
 	div.section.page.page3
+		img.title(src="/img/store/page3-title.png")
+		div.page3-content1
+			img.page3-content1-bg(src="/img/store/page3-bg2.png")
+			p.content1-score !{`${result.value.validRate*100}%`}
+			div.page3-content1-info
+				span.left-line
+				span.text !{`看的出${result.collegeName}对科学研究成果的珍视和与呵护`}
+				span.right-line
 
 block script
 	script(src='/js/store.js')

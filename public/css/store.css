@@ -89,7 +89,7 @@ html,body{
     width: 100%;
 }
 
-.page2>.title{
+.page2>.title,.page3>.title{
     margin: 0 auto;
     width: 46%;
     display: block;
@@ -169,4 +169,59 @@ html,body{
     right: 0;
     bottom: 0;
     width: 24%;
+}
+
+.page3-content1{
+    width: 60%;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 5%;    
+    padding-bottom: 60%;
+}
+
+.page3-content1-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.page3-content1-info{
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    right: 0;
+    width: 66%;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+}
+
+.page3-content1-info span{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.left-line,.right-line{
+    width: 6%;
+    height: 1px;
+    background-color: #fff;
+}
+
+.page3-content1-info>.text{
+    padding: 0 1rem;
+    width: 88%;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+}
+
+.content1-score{
+    position: absolute;
+    top: 36%;
+    color: #0bf9bd;
+    font-size: 3.8rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
 }
