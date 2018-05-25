@@ -31,11 +31,11 @@ html,body{
 
 .page-arrow{
     position: absolute;
-    bottom: 5%;
+    bottom: 4%;
     left: 0;
     right: 0;
     margin: auto;
-    width:6%;
+    width:5%;
 }
 
 .title{
@@ -155,4 +155,18 @@ html,body{
     position: relative;
     top: -2px;
     width: 100%;
+}
+
+.left-hill{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 24%;
+}
+
+.right-hill{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 24%;
 }
