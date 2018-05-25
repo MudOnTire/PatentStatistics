@@ -19,19 +19,22 @@ block content
 		div.content
 			img.content-bg(src="/img/store/page2-content-border.png")
 			div.content-item.content-item1
-				img.content-item-icon(src="/img/store/page2-icon1.png")
+				div.item-icon-container
+					img.content-item-icon(src="/img/store/page2-icon1.png")
 				div.content-item-info
 					p.content-item-title !{`<span class="highlight">${result.value.fmzlCount}</span>条发明专利`}
 					p.content-item-detail !{`位居全国高效第<span class="highlight">${result.value.fmzlRank}</span>名，技术含金量99.9999%`}
 			img.divider1(src="/img/store/page2-divider1.png")
 			div.content-item.content-item2
-				img.content-item-icon(src="/img/store/page2-icon2.png")
 				div.content-item-info
 					p.content-item-title !{`<span class="highlight">${result.value.syxxCount}</span>条实用新型`}
 					p.content-item-detail !{`位居全国高效第<span class="highlight">${result.value.syxxRank}</span>名，微创新真是如雨后春笋一般！`}
+				div.item-icon-container
+					img.content-item-icon(src="/img/store/page2-icon2.png")
 			img.divider2(src="/img/store/page2-divider2.png")
 			div.content-item.content-item3
-				img.content-item-icon(src="/img/store/page2-icon3.png")
+				div.item-icon-container
+					img.content-item-icon(src="/img/store/page2-icon3.png")
 				div.content-item-info
 					p.content-item-title !{`<span class="highlight">${result.value.wgsjCount}</span>条外观专利`}
 					p.content-item-detail !{`位居全国高效第<span class="highlight">${result.value.wgsjRank}</span>，绝对是看颜值、懂审美、有品位的高校！`}

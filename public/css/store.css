@@ -106,7 +106,7 @@ html,body{
     width: 80%;
     height: 60%;
     position: relative;
-    padding: 4% 7%;
+    padding: 2% 7% 5%;
 }
 
 .page2 .content-bg{
@@ -121,30 +121,28 @@ html,body{
 
 .content-item{
     overflow: hidden;
-    padding: 6% 0;
+    display: table;
     color: #fff;
+    height: 32%;
 }
 
 .content-item-title{
     font-size: 1.6rem;
 }
 
+.item-icon-container{
+    display: table-cell;
+    vertical-align: middle;
+    width: 40%;
+}
+
 .content-item-icon{
-    float: left;
-    width: 28%;
+    width: 70%;
 }
 
 .content-item-info{
-    width: 60%;
-    float: right;
-}
-
-.content-item2 .content-item-icon{
-    float: right;
-}
-
-.content-item2 .content-item-info{
-    float: left;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .content-item-detail{
