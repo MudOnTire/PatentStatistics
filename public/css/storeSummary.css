@@ -138,29 +138,35 @@ body{
 .rank-clue{
     text-align: center;
     overflow: hidden;
-    line-height: 2.2rem;
-    width: 90%;
+    line-height: 1.4rem;
+    width: 85%;
     margin: 3% auto;
 }
 
 .leaf{
     display: block;
     float: left;
-    width: 8%;
+    width: 6%;
 }
 
 .rank-clue-txt{
     display: block;
     float: left;
     width: 84%;
-    font-size: 0.84rem;
+    font-size: 0.76rem;
 }
 
-.sperator1{
-    height: 1px;
+.divider3{
     width: 100%;
-    margin: 0 auto;
-    background-color: rgba(146, 77, 31, 0.2);
+    height: 1px;
+    position: relative;
+    top: -0.3rem;
+}
+
+.divider4{
+    width: 1px;
+    margin-left: -1px;
+    float: left;
 }
 
 .mid-row2{

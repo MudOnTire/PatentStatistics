@@ -32,21 +32,21 @@ block content
             span.count-value=`${result.value.wgsjCount}件`
             img.divider2(src="/img/store/page4-divider2.png")            
       div.rank-clue
-        img.leaf.left-leaf(src="/img/left-leaf.png")
-        span.rank-clue-txt=`${result.pa}第${result.countRank}名`
-        img.leaf.right-leaf(src="/img/right-leaf.png")  
-      div.sperator1
+        img.leaf.left-leaf(src="/img/store/page4-left-leaf.png")
+        span.rank-clue-txt=`${result.collegeName}第${result.value.countRank}名`
+        img.leaf.right-leaf(src="/img/store/page4-right-leaf.png")  
+      img.divider3(src="/img/store/page4-divider3.png")
 
     div.row.mid-row.mid-row2
       div.colleague-container
-        img.row2-icon(src="/img/colleague-icon.png")
-        p 合作人员数
-        p= result.partnerCount
-      div.vertical-seperator
+        img.row2-icon(src="/img/store/page4-icon1.png")
+        p 有效比例
+        p.highlight !{`${result.value.validRate*100}%`}
+      img.divider4(src="/img/store/page4-divider4.png")
       div.field-container
-        img.row2-icon(src="/img/field-icon.png")
+        img.row2-icon(src="/img/store/page4-icon2.png")
         p 涉及领域
-        p= result.ipcCount
+        p.highlight= result.value.ipcCount
 
     div.row.mid-row.mid-row3
       ul.rank-list  
