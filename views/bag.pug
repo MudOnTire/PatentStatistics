@@ -50,7 +50,7 @@ block content
 			img(src="/img/page-arrow.png", class='page-arrow')
 
 	div.section.page.page3
-		iframe#collegeFrame.college-frame(src=`/statistics/bag/summary?college=${result.pa}&name=${result.pin}`)
+		iframe.summary-frame(src=`/statistics/bag/summary?college=${result.pa}&name=${result.pin}`)
 
 block script
 	script(src='/js/bag.js')

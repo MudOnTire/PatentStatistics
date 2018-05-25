@@ -1,5 +1,5 @@
 (function () {
-    var pieColors = ['#ff8e3c', '#ffe84a', '#FFAF29'];
+    var pieColors = ['#500077', '#05044F', '#010080'];
 
     function getTotal(arr) {
         var j,

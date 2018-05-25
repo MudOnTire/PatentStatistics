@@ -1,11 +1,10 @@
 .main{
     width: 90%;
-    margin: 0 auto;
+    margin: 5% auto 0;
     border-radius: 0.4rem;
     overflow: hidden;
     font-size: 0.7rem;
     color: #934d1f;
-    padding-top: 5%;
 }
 
 .top-row,.bottom-row{

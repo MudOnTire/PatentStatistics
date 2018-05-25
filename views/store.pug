@@ -57,6 +57,9 @@ block content
 			p.content2-text !{`贵校的（许可+转让率）为${result.value.transferRate*100}%，运营状况良好，打败了全国${(1-result.value.transferRank/2015).toFixed(2)*100}%的高校，继续保持吧！`}
 		img.page-arrow(src="/img/store/page-arrow.png")
 
+	div.section.page.page4
+		iframe.summary-frame(src=`/statistics/store/summary?college=${result.collegeName}`)
+
 block script
 	script(src='/js/store.js')
 	

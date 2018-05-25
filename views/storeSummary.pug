@@ -1,30 +1,36 @@
 extends summaryLayout
 
 block style
-  link(rel="stylesheet", href="/css/bag.css")
   link(rel="stylesheet", href="/css/storeSummary.css")
 
 block content
   div.main
     div.row.top-row
-      p !{`专利总数：<strong class="college-patent-count">${result.count}件</strong>`}
+      span.info1 !{`专利总数：<strong class="highlight">${result.value.count}件</strong>`}
+      span.info2 !{`科研人员：<strong class="highlight">${result.value.kyCount}位</strong>`}
+    img.divider1(src="/img/store/page4-divider1.png")
     div.row.mid-row.mid-row1
-      p.time-range !{`（ ${result.adMin} - ${result.adMax} ）`}
+      p.time-range !{`（ ${result.value.ad} - ${result.value.now} ）`}
       div.chart-container
-        canvas#canPie(width=500,height=500,data-value=`${result.fmzlCount},${result.syxxCount},${result.wgsjCount}`)
+        div.pie-container
+          img.pie-bg(src="/img/store/page4-pie-bg.png")
+          canvas#canPie(width=500,height=500,data-value=`${result.value.fmzlCount},${result.value.syxxCount},${result.value.wgsjCount}`)
         ul.count-list
           li.count-item
             span.color-tip.fmzl-color
             span.count-name 发明专利
-            span.count-value=`${result.fmzlCount}件`
+            span.count-value=`${result.value.fmzlCount}件`
+            img.divider2(src="/img/store/page4-divider2.png")
           li.count-item
             span.color-tip.syxx-color
             span.count-name 实用新型
-            span.count-value=`${result.syxxCount}件`
+            span.count-value=`${result.value.syxxCount}件`
+            img.divider2(src="/img/store/page4-divider2.png")            
           li.count-item
             span.color-tip.wgsj-color
             span.count-name 外观专利
-            span.count-value=`${result.wgsjCount}件`
+            span.count-value=`${result.value.wgsjCount}件`
+            img.divider2(src="/img/store/page4-divider2.png")            
       div.rank-clue
         img.leaf.left-leaf(src="/img/left-leaf.png")
         span.rank-clue-txt=`${result.pa}第${result.countRank}名`
@@ -55,6 +61,8 @@ block content
           p.rank-value= result.wgsjRank 
     div.row.bottom-row
       p.thanks !{`鸣谢：${result.partnerRank}`}
+    a.jump-link(href="javascript:;") 统计我的专利
+    p#license 以上数据由中高知识产权价值评估系统提供
 
 block script
   script(src="/js/storeSummary.js")

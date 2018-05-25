@@ -1,0 +1,238 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #ffe84a;
+}
+
+html{
+    font-size: 20px;
+}
+body{
+    background: url('/img/store/page1-bg.png') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;    
+}
+.highlight{
+    color:#22ffeb; 
+}
+.row {
+    overflow: hidden;
+    position: relative;
+}
+.main{
+    width: 90%;
+    margin: 5% auto 0;
+    overflow: hidden;
+    font-size: 0.7rem;
+    color: #fff;
+}
+
+.top-row,.bottom-row{
+    padding: 0 1rem;
+}
+
+.top-row .info1{
+    float: left;
+}
+
+.top-row .info2{
+    float: right;
+}
+
+.divider1{
+    width: 100%;
+}
+
+.college-patent-count{
+    font-size: 1.1rem;
+}
+
+.mid-row{
+    padding: 0.4rem 0.8rem 0.8rem;
+}
+
+.time-range{
+    text-align: center;
+    font-family: FZCYSJW--GB1-0;    
+}
+
+.pie-container{
+    width: 40%;
+    height: 40%;
+    float: left;
+    position: relative;
+}
+
+.pie-bg{
+    width: 100%;
+}
+
+#canPie{
+    position: absolute;
+    width: 71%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    margin-top: 13%;
+    margin-left: 15%;
+}
+
+.chart-container{
+    margin-top: 5%;
+    overflow: hidden;
+}
+
+.count-list{
+    float: right;
+    width: 60%;
+    padding-top: 3%;
+    padding-left: 8%;
+    color: #22ffeb;
+    font-size: 0.7rem;
+}
+
+.count-item{
+    width: 100%;
+    border-bottom: 1px solid rgba(146, 77, 31, 0.2);
+    overflow: hidden;
+    padding: 0.2rem;
+}
+
+.divider2{
+    width: 108%;
+}
+
+.count-value{
+    display: block;
+    float: right;
+}
+
+.color-tip{
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.4rem;
+    vertical-align: middle;
+    margin-right: 0.4rem;
+}
+
+.fmzl-color{
+    background-color: #500077;
+}
+
+.syxx-color{
+    background-color: #05044F;
+}
+
+.wgsj-color{
+    background-color: #010080;
+}
+
+.rank-clue{
+    text-align: center;
+    overflow: hidden;
+    line-height: 2.2rem;
+    width: 90%;
+    margin: 3% auto;
+}
+
+.leaf{
+    display: block;
+    float: left;
+    width: 8%;
+}
+
+.rank-clue-txt{
+    display: block;
+    float: left;
+    width: 84%;
+    font-size: 0.84rem;
+}
+
+.sperator1{
+    height: 1px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgba(146, 77, 31, 0.2);
+}
+
+.mid-row2{
+    padding-top: 0;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid rgba(146, 77, 31, 0.2);    
+}
+
+.mid-row2>div{
+    float: left;
+}
+
+.row2-icon{
+    width: 0.8rem;
+}
+
+.colleague-container,.field-container{
+    width: 50%;
+    text-align: center;
+    line-height: 1.2rem;
+}
+
+.rank-item{
+    border-bottom: 1px dotted rgba(146, 77, 31, 0.2);        
+    padding: 0 1.2rem;
+}
+
+.mid-row3{
+    padding-top: 0.4rem;
+}
+
+.bottom-row{
+    padding: 0.3rem 0.5rem;;
+    font-family: inherit;
+    font-size: 0.6rem;
+}
+
+.thanks{
+    line-height: 0.8rem;
+}
+
+.jump-link{
+    display: block;
+    color: #4a1f03;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#license{
+    color: #4a1f03;
+    line-height: 1rem;
+    font-size: 0.5rem;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@media screen and (max-height: 569px){
+    .main{
+        padding-top: 1%;
+    }
+    .mid-row{
+        padding: 0.4rem;
+    }
+    .rank-item{
+        line-height: 1.8rem;
+    }
+    .jump-link{
+        margin-top: 0.2rem;
+    }
+}
